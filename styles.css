@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align all text content */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b3a4b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.navbar nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Block Style for Each Section */
+.section {
+    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    color: #2b3a4b;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section p, .section span {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+.skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills-list span {
+    background-color: #ffeb3b;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.skills-list span:hover {
+    background-color: #ffd700;
+}
+
+/* Education Section */
+.education .education-item {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+.education-item h3 {
+    font-weight: bold;
+    color: #2b3a4b;
+}
+
+/* Footer */
+.footer {
+    background-color: #2b3a4b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.resume-button {
+    background-color: #00bfa5;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #008c76;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
